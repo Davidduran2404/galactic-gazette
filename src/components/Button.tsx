@@ -6,7 +6,7 @@ const STYLES = ['btn-primary', 'btn-outlined'];
 
 const SIZES = ['btn-medium', 'btn-large'];
 
-export const Button = ({ children, type, onClick, style = '', size = '' }: IButton) => {
+export const Button : React.FC<IButton & React.ComponentProps<any>> = ({ children, type, onClick, style = '', size = '' }: IButton) => {
     const checkStyle = STYLES.includes(style) ? style : STYLES[0];
 
     const checkSize = SIZES.includes(size) ? size : SIZES[0];
