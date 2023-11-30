@@ -29,7 +29,7 @@ function Navbar() {
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
                         <i className="fa-solid fa-user-astronaut"></i>
-                        Galactic Gazette
+                        GALACTIC GAZETTE
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         <i className={click ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'}></i>
